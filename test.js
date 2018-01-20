@@ -11,7 +11,7 @@ describe('TestNow',function () {
 
     });
     after(function() {
-    
+        process.exit(0)
     });
     //Test router GET cauhoi/lelve=?
     describe('/Test Router GET /cauhoi?level=1',function () {
