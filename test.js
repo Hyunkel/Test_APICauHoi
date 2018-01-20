@@ -11,7 +11,7 @@ describe('TestNow',function () {
 
     });
     after(function() {
-        process.exit(0)
+      
     });
     //Test router GET cauhoi/lelve=?
     describe('/Test Router GET /cauhoi?level=1',function () {
@@ -70,6 +70,7 @@ describe('TestNow',function () {
                     console.log(res.body)
                     // check type data['res']
                     expect(res.body.res, 'Data[res] not valid object').to.be.a('string')
+                    process.exit(0)
                 }else{
                     console.log('DATA:',res.body)
                     var err = new TypeError('Data Response With Error_Code = 0 =>Maybe:SQL Injection');
